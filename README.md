@@ -7,13 +7,15 @@ Sample project that helps with the integration of Lending plugin.
 
 Specify the following in `local.properties` file:
 
-- ACCESS_KEY=<access_key>
-- SECRET_KEY=<secret_key>
-- LENDING_SDK_VERSION=<lending_sdk_version>
-- DC_SDK_VERSION=<dc_sdk_version>
-- COMMON_SDK_VERSION=<common_sdk_version>
-- COMMON_FLAVOR=<common_flavor>
-- LOGGER_SDK_VERSION=<logger_sdk_version>
+```properties
+ACCESS_KEY=<access_key>
+SECRET_KEY=<secret_key>
+LENDING_SDK_VERSION=<lending_sdk_version>
+DC_SDK_VERSION=<dc_sdk_version>
+COMMON_SDK_VERSION=<common_sdk_version>
+COMMON_FLAVOR=<common_flavor>
+LOGGER_SDK_VERSION=<logger_sdk_version>
+```
 
 Add plugin dependency in `pubspec.yaml` file:
 
