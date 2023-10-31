@@ -63,8 +63,15 @@ class _MyHomePageState extends State<MyHomePage> {
   );
 
   _initSdk() {
-    FinBoxLendingPlugin.initSdk("UAT", "XI2JeWvoZv5gk3lRj8bYa10ruDAlQAV097iwmmPt", "83608437479",
-        "gicyiDCkMYejSgSSnMDpvPrsmvEqOhZxOugjmJaTmdFYFbLhNlPvLyKpDdwRmAdb", "Poonawalla", true, "");
+    FinBoxLendingPlugin.initSdk(
+        "UAT",
+        "f078b4d0-d171-4ed9-a1ce-c02134213b6c",
+        "demo_lender_user_09562023",
+        "CayxyftdexgQkYTGPIwdHOLyWAyjMDkppWoFoHeQRMSeXKxSTdbNEdljrSmWreqb",
+        null,
+        null,
+        null);
+    FinBoxLendingPlugin.startLending();
   }
 
   _startLendingSDK() {
@@ -77,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
     print("Returned Values ${call.arguments}");
   }
 
-    @override
+  @override
   Widget build(BuildContext context) {
     FinBoxLendingPlugin.platform.setMethodCallHandler(_getJourneyResult);
     // This method is rerun every time setState is called, for instance as done
@@ -114,7 +121,9 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             ElevatedButton(
               style: raisedButtonStyle,
-              onPressed: () { _startLendingSDK(); },
+              onPressed: () {
+                _startLendingSDK();
+              },
               child: Text('Start Lending SDK'),
             ),
           ],
