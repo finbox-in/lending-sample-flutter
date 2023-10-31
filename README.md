@@ -23,17 +23,6 @@ Add plugin dependency in `pubspec.yaml` file:
  finbox_lending_plugin: any
  ```
 
-## Init Library in Kotlin Application
-
-```kotlin
-class MainApp:FlutterApplication() {
-    override fun onCreate() {
-        super.onCreate()
-        FinBoxLendingPlugin.initLibrary(this)
-    }
-}
-```
-
 ## Init SDK
 
 ```dart
@@ -43,6 +32,12 @@ class MainApp:FlutterApplication() {
 "Customer ID",
 "Customer token",
 "Credit Line withdrawl amount");
+```
+
+## Start Journey
+
+```dart
+FinBoxLendingPlugin.startLending();
 ```
 
 
