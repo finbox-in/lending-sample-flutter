@@ -4,7 +4,6 @@
    <application
         android:label="lendingfluttersample"
         android:icon="@mipmap/ic_launcher"
-       android:name=".MainApp"
        tools:replace="android:label">
         <activity
             android:name=".MainActivity"
